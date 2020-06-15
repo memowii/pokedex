@@ -1,0 +1,24 @@
+{
+  "name": "pokedex-typescript",
+  "version": "1.0.0",
+  "description": "TypeScript is a superset that needs to compile to plain JavaScript. It offers more control over your code since it uses type annotations, interfaces, classes, and static type checking to throw errors at compile-time. TypeScript helps to enhance code quality and understandability, especially with a large codebase.",
+  "main": "index.js",
+  "scripts": {
+    "tsc": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ibrahima92/pokedex-typescript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ibrahima92/pokedex-typescript/issues"
+  },
+  "homepage": "https://github.com/ibrahima92/pokedex-typescript#readme",
+  "dependencies": {
+    "typescript": "^3.9.3"
+  }
+}
