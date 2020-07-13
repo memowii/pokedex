@@ -28,7 +28,7 @@ const getPokemon = async (id: number): Promise<void> => {
     type: pokemonType
   };
 
-  showPokemon(transformedPokemon);
+  // showPokemon(transformedPokemon);
 };
 
 const showPokemon = (pokemon: IPokemon): void => {
