@@ -10,14 +10,6 @@ h1 {
     color: rgb(228, 196, 57);
 }
 
-/*#app {*/
-/*    display: grid;*/
-/*    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));*/
-/*    grid-gap: 1.5rem;*/
-/*    justify-content: center;*/
-/*    align-items: center;*/
-/*}*/
-
 .card {
     width: 12rem auto;
     background: #444;

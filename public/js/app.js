@@ -35,7 +35,9 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
-var container = document.getElementById("app");
+var _a;
+var app = document.getElementById("app");
+var rowDiv = (_a = app.firstElementChild) === null || _a === void 0 ? void 0 : _a.firstElementChild;
 var pokemons = 100;
 var fetchData = function () {
     for (var i = 1; i <= pokemons; i++) {
@@ -61,12 +63,15 @@ var getPokemon = function (id) { return __awaiter(void 0, void 0, void 0, functi
                     image: "" + pokemon.sprites.front_default,
                     type: pokemonType
                 };
+                showPokemon(transformedPokemon);
                 return [2 /*return*/];
         }
     });
 }); };
 var showPokemon = function (pokemon) {
-    var output = "\n        <div class=\"card\">\n            <span class=\"card--id\">#" + pokemon.id + "</span>\n            <img class=\"card--image\" src=" + pokemon.image + " alt=" + pokemon.name + " />\n            <h1 class=\"card--name\">" + pokemon.name + "</h1>\n            <span class=\"card--details\">" + pokemon.type + "</span>\n        </div>\n    ";
-    container.innerHTML += output;
+    var output = "\n        <div class=\"col mb-4\">\n          <div class=\"card\">\n              <span class=\"card--id\">#" + pokemon.id + "</span>\n              <img class=\"card--image\" src=" + pokemon.image + " alt=" + pokemon.name + " />\n              <h1 class=\"card--name\">" + pokemon.name + "</h1>\n              <span class=\"card--details\">" + pokemon.type + "</span>\n          </div>\n        </div>\n    ";
+    if (rowDiv) {
+        rowDiv.innerHTML += output;
+    }
 };
 fetchData();
